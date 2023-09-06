@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <title>Filtro de Busca</title>
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Mulish&display=swap"
+        rel="stylesheet">
+        <script src="./main.js" defer></script>
+</head>
+
+<body>
+    <main>
+        <button id="openFilter">Filtrar busca</button>
+        <div id="filter" class="">
+            <div class="title">
+                <h1>Filter</h1>
+                <img src="./assets/close.svg" alt="Fechar modal" id="btnClose">
+            </div>
+            <div class="search">
+                <span class="subtitle">Search by keyword</span>
+                <input type="search" name="search" id="inputSearch" placeholder="Search jobs">
+            </div>
+            <div class="filterOptions">
+                <span class="subtitle">View</span>
+                <label for="filterOptions">
+                        <div>
+                            <input type="radio" name="filterOptions" id="all" value="all" />
+                             All job posts 
+                        </div>                   
+                        <div>
+                            <input type="radio" name="filterOptions" id="active" value="active">
+                            Active job posts
+                        </div>
+                        <div>
+                            <input type="radio" name="filterOptions" id="archived" value="archived">
+                            Archived job posts
+                        </div>
+                        
+                 </label>
+                
+                
+            </div>
+            <div class="shared">
+                <span class="subtitle">Include</span>                                 
+                <label for="sharedJobs" class="checkboxContainer">
+                        <input type="checkbox" name="sharedJobs" id="sharedJobs">
+                        <span class="checkmark"></span>
+                        <span>Jobs shared with me</span>
+                </label>           
+                
+            </div>
+            <button id="saveChanges">Save changes</button>
+        </div>
+    </main>
+
+</body>
+
+</html>

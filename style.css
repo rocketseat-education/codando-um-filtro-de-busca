@@ -1,0 +1,199 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    font-size: 62.5%;
+    --shadow-color: #1B183C;
+    --seach-color: #EBB96E;
+    --modal-color: #322E59;
+    --bg-color: #232044;
+    --text-color: #BCBACF;
+}
+
+body {
+    background-color: var(--bg-color);
+    font-size: 1.8rem;
+    font-family: 'Mulish', sans-serif;
+    color: var(--text-color);  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+
+}
+
+
+
+
+button{
+    padding: 2.2rem;
+    border-radius: .8rem;
+    height: 6.7rem;
+    width: 34.4rem;
+    font-family: 'Mulish', sans-serif;
+    border: none;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.title img {
+    transition: all ease-in-out .3s;
+    cursor: pointer;
+}
+
+button#saveChanges {
+background-color: var(--seach-color);
+}
+
+
+button:hover{
+    filter: brightness(0.8);
+    transform: scale(1.05);
+}
+
+.title img:hover {
+    filter: brightness(1.05);
+    transform: scale(1.2);
+}
+
+
+#filter {
+    background-color: var(--modal-color);
+    padding: 7rem 7rem 10rem 7rem;
+    border-radius: 6rem;
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    box-shadow: -30px -30px var(--shadow-color);
+    max-width: 48.4rem;
+    margin: 5rem auto;
+}
+
+.closed {
+    visibility: hidden;
+    display: none;
+}
+
+
+
+.title {
+    display: flex;
+    justify-content: space-between;
+}
+
+.title h1 {
+    font-family: Merriweather;
+    font-size: 48px;
+    font-weight: bold;
+}
+
+.search, .shared {
+    display: flex;
+    flex-direction: column;
+}
+
+.subtitle {
+    text-transform: uppercase;
+    font-size: 1.6rem;
+    font-weight: bold;
+    margin-bottom: .8rem;
+}
+
+input[type=search] {
+    font-family: 'Mulish', sans-serif;
+    background-color: var(--shadow-color);
+    padding: 1.6rem 1.6rem 1.6rem 6.2rem;
+    background-image: url("./assets/search.svg");
+    background-repeat: no-repeat;
+    background-position-y: center;
+    background-position-x: 1.6rem;
+    border: none;
+    border-radius: 1rem;
+    color: var(--text-color);
+
+ 	}
+
+     input[type=search]::placeholder {
+        color: var(--text-color);
+     }
+
+     input[type="radio"] {
+        -webkit-appearance: none;
+        appearance: none;
+        margin: 0;
+        font: inherit;
+        color: var(--bg-color);
+        width: 3.8rem;
+        height: 3.8rem;
+        border: 1px solid var(--text-color);
+        border-radius: 50%;
+        cursor: pointer;
+        display: grid;
+        place-content: center;
+        line-height: 3.8rem;
+      }
+
+      input[type="radio"]::before {
+        content: "";
+        width: 2.8rem;
+        height: 2.8rem;
+        border-radius: 50%;
+        box-shadow: inset 1em 1em var(--text-color);
+        transform: scale(0);
+        transition: 120ms transform ease-in-out;
+      }
+
+      input[type="radio"]:checked::before {
+        transform: scale(1);
+      }
+
+      .filterOptions div {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        margin: 1rem 0;
+      }
+
+      .checkboxContainer {
+        position: relative;
+      }
+
+
+      .checkmark {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 3.4rem;
+        width: 3.4rem;
+        background-color: var(--text-color);
+        border-radius: 8px;
+        cursor: pointer;
+}
+
+    .shared:hover input ~ .checkmark {
+        filter: brightness(1.3);
+    }
+
+    .shared input:checked ~ .checkmark {
+        background-color: var(--text-color);
+        background-image: url("./assets/checkbox.svg");
+        background-repeat: no-repeat;
+        background-position: center;
+
+    }
+
+    .checkboxContainer span:last-of-type {
+        margin-left: 30px;
+    }
+
+
+
+
+
+
+
+
+
