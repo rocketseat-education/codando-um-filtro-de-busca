@@ -1,4 +1,4 @@
-![Cover](https://i.ibb.co/dkXzHgX/cover.png)
+![Cover](https://raw.githubusercontent.com/rocketseat-education/codando-um-filtro-de-busca/main/assets/cover.png)
 
 # Codando com os instrutores um modal de filtro
 
