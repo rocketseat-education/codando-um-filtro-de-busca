@@ -1,4 +1,4 @@
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/08f749ff-d06d-49a8-a488-9846e081b224/ef36c8c6-9f93-4da9-974f-b365e1da673b/Untitled.png)
+![Cover](https://i.ibb.co/dkXzHgX/cover.png)
 
 # Codando com os instrutores um modal de filtro
 
